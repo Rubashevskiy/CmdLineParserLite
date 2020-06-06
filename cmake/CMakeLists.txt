@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.0)
+project(cmdlineparserlite)
+set(CMAKE_CXX_STANDARD 17)
+set(SRC "../example/main.cpp")
+list(APPEND SRC "../src/CmdLineParserLite/cmdlineparserlite.cpp")
+add_executable(${PROJECT_NAME} ${SRC})
+add_definitions(-g)
